@@ -29,6 +29,7 @@ h1 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
+  overflow-y: hidden;
 }
 
 .app::before {
@@ -88,7 +89,7 @@ h1 {
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  margin: 1rem auto;
+  margin: 10rem auto;
   padding: 1rem;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.2);
