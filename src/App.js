@@ -51,7 +51,11 @@ function App() {
         }
 
         {data.name !== undefined &&
-          <div className="bottom">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bottom">
             <div className="feels">
               {data.main ? <p className="bold">{Math.round(data.main.feels_like - 273.15)}°C</p> : null}
               <p>Feels Like</p>
@@ -64,7 +68,7 @@ function App() {
               {data.wind ? <p className="bold">{data.wind.speed}MPH</p> : null}
               <p>Wind Speed</p>
             </div>
-          </div>
+          </motion.div>
         }
 
       </div>
